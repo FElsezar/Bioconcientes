@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=Comfortaa:wght@300;400;500;600;700&family=Gabriela&family=IM+Fell+DW+Pica:ital@0;1&family=Kreon:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.i-s {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.i-s h1 {
+  display: inline-flex;
+  width: 100%;
+  font-size: 5rem;
+  justify-content: center;
+  text-transform: uppercase;
+  font: 5rem "Bebas Neue", sans-serif;
+  margin: 1rem 0 0 0;
+  text-align: center;
+}
+.i-s span {
+  margin: 0 0.8rem;
+  padding: 0 0.3rem;
+  background-color: #232423;
+  color: #f1f1f1;
+}
+.i-s p {
+  font: 1.7rem "Raleway", sans-serif;
+  text-align: center;
+  margin: 2rem 3rem;
+}
+
+.i-1 {
+  width: 100%;
+  height: 60rem;
+  top: 0;
+}
+.i-1 img {
+  width: 100%;
+  height: 150%;
+  transform: translateY(-10rem);
+}
+.i-1 h1 {
+  position: absolute;
+  font-family: "IM Fell DW Pica", serif;
+}
+
+.i-2 {
+  width: auto;
+  height: auto;
+  flex-wrap: wrap;
+  background: #81A69B;
+}
+
+.i-3 {
+  flex-wrap: wrap;
+}
+
+.btns {
+  display: flex;
+  width: 90%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-10 {
+  background: none;
+  border: 2px solid;
+  font: 3rem "Bebas Neue", sans-serif;
+  line-height: 1;
+  margin: 0.5em;
+  cursor: pointer;
+  width: 20%;
+  height: 7rem;
+  text-align: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  color: #688C80;
+  transition: 0.25s;
+  box-shadow: 0.08em 0.08em 0 0 #688C80, inset 0.08em 0.08em 0 0 #688C80;
+}
+.btn-10:hover, .btn-10:focus {
+  border-color: #688C80;
+  color: #EBBF54;
+  box-shadow: 0 0 0 0 #81A69B, inset 6em 3.5em 0 0 #81A69B;
+}
+
+.i-7 {
+  width: 100%;
+  height: auto;
+}
+.i-7 img {
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=inicio.css.map */

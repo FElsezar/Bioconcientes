@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=Comfortaa:wght@300;400;500;600;700&family=Gabriela&family=IM+Fell+DW+Pica:ital@0;1&family=Kreon:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// $brown: #af5015
+// $verde: #5EB23F
+
+// font-family: 'Bebas Neue', sans-serif;
+      // 'Bree Serif', serif;
+      // 'Comfortaa', cursive;
+      // 'Gabriela', serif;
+      // 'IM Fell DW Pica', serif;
+      // 'Kreon', serif;
+      // 'Raleway', sans-serif;
+// $headings: 'Amatic SC', cursive;
+$headings: 'Bebas Neue', sans-serif;
+$text: 'Raleway', sans-serif;
+$pica: 'IM Fell DW Pica', serif;
+$white: #f1f1f1;
+$grey-black: #303030;
+$grey: #4d4d4d;
+// $accent: #546d54;
+$accent: #688C80;
+$accent2:#81A69B;
+// $comp: #DEA614; 
+$comp: #EBBF54;
+$background: #cfcfcf;
+$color: #232423;
+$black: #232423;
+$border-clr: #11111111;
+
+$ease-in-cubic: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+$ease-out-cubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+$ease-in-out-cubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+
+$break-xs: 481px;
+$break-s: 769px;
+$break-m: 1024px;
+
+$btn-width: 200px !default;
+$btn-height: 28px !default;
+$btn-full: $btn-height+$btn-width !default;
+$btn-half: calc($btn-full / 2)!default;
+$bg-color: $accent !default;
+
+@mixin center($center){
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin size($width, $height: null) {
+  @if $height == null {
+    $height: $width;
+  }
+
+  width: $width;
+  height: $height;
+}
+
+@mixin absolute($position) {
+  position: absolute;
+  top: $position;
+  left: $position;
+  transform: translate(-50%, -50%);
+}
+
+@mixin transform($transforms) {
+	-webkit-transform: $transforms;
+	-moz-transform: $transforms;
+	-ms-transform: $transforms;
+	transform: $transforms;
+}
+// Rotate
+@mixin rotate ($deg) { 
+	@include transform(rotate(#{$deg}deg));
+}
+
+// Scale
+@mixin scale($scale) {
+	@include transform(scale($scale));
+}
+
+// Translate
+@mixin translate ($x, $y) {
+	@include transform(translate($x, $y));
+}
+
+// Skew
+@mixin skew ($x, $y) {
+	@include transform(skew(#{$x}deg, #{$y}deg));
+}
+
+// Transform Origin
+@mixin transform-origin ($origin) {
+    	-webkit-transform-origin: $origin;
+    	-moz-transform-origin: $origin;
+	-ms-transform-origin: $origin;
+	transform-origin: $origin;
+}
+@mixin transition($transition...) {
+  -moz-transition:    $transition;
+  -o-transition:      $transition;
+  -webkit-transition: $transition;
+  transition:         $transition;
+}
+@mixin transition-property($property...) {
+  -moz-transition-property:    $property;
+  -o-transition-property:      $property;
+  -webkit-transition-property: $property;
+  transition-property:         $property;
+}
+@mixin transition-duration($duration...) {
+  -moz-transition-property:    $duration;
+  -o-transition-property:      $duration;
+  -webkit-transition-property: $duration;
+  transition-property:         $duration;
+}
+@mixin transition-timing-function($timing...) {
+  -moz-transition-timing-function:    $timing;
+  -o-transition-timing-function:      $timing;
+  -webkit-transition-timing-function: $timing;
+  transition-timing-function:         $timing;
+}
+@mixin transition-delay($delay...) {
+  -moz-transition-delay:    $delay;
+  -o-transition-delay:      $delay;
+  -webkit-transition-delay: $delay;
+  transition-delay:         $delay;
+}
