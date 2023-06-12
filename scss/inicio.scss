@@ -90,6 +90,12 @@
     }
 }
 
+.lineas ul {
+    list-style: disc;
+    margin: 0 10%;
+    border-bottom: 1px solid $accent
+}
+
 .i-7 {
     @include size (100%, auto);
 

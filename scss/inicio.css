@@ -88,6 +88,12 @@
   box-shadow: 0 0 0 0 #81A69B, inset 6em 3.5em 0 0 #81A69B;
 }
 
+.lineas ul {
+  list-style: disc;
+  margin: 0 10%;
+  border-bottom: 1px solid #688C80;
+}
+
 .i-7 {
   width: 100%;
   height: auto;
