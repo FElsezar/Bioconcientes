@@ -296,8 +296,20 @@ nav {
   }
   .h-container {
     margin: 0;
-    display: block;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     padding: 0;
+  }
+  .logo {
+    width: 12rem;
+    height: 4rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
   }
   .nav-trigger {
     display: block;
@@ -316,10 +328,11 @@ nav {
   nav.in {
     pointer-events: auto;
     height: 100%;
+    width: 100%;
     top: 0;
   }
-  nav ul,
-  li {
+  .nav-menu, .menu-item {
+    width: 100%;
     display: block;
     padding: 0;
     margin: 0;
@@ -391,5 +404,8 @@ nav {
   .nav-label {
     top: 50%;
     color: #f1f1f1;
+  }
+  .wrap {
+    display: none;
   }
 }/*# sourceMappingURL=header.css.map */

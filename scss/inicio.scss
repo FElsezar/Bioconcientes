@@ -45,11 +45,13 @@
     img {
         @include size (100%, 150%);
         transform: translateY(-10rem);
+        object-fit: none;
     }
 
     h1 {
         position: absolute;
         font-family: $pica;
+        flex-wrap: wrap;
     }
 }
 
