@@ -7,15 +7,21 @@
     margin: 0;
     @include center (center);
 
-    h1 {
+    h1, h2 {
         display: inline-flex;
         width: 100%;
-        font-size: 5rem;
         justify-content: center;
-        text-transform: uppercase;
         font: 5rem $headings;
         margin: 1rem 0 0 0;
         text-align: center;
+    }
+    h1 {        
+        font-size: 5rem;
+        text-transform: uppercase;
+    }
+    h2{
+        font-size: 4rem;
+
     }
 
     span {
@@ -58,7 +64,6 @@
 }
 
 .btns {
-    display: flex;
     width: 90%;
     @include center (center)
 }
@@ -92,10 +97,22 @@
 
 .lineas ul {
     list-style: disc;
-    margin: 0 10%;
     border-bottom: 1px solid $accent
 }
-
+.consumo ul{
+    margin: 0 10%;
+}
+.naturaleza ul {
+    @include center (center);
+    flex-wrap: wrap;
+    list-style: none;
+}
+.naturaleza ul {
+    margin: 0 30%;
+}
+.container {
+    @include size(100%);
+}
 .i-7 {
     @include size (100%, auto);
 
@@ -104,6 +121,16 @@
     }
 }
 
+@media (max-width: $break-m) {
+    .btns{
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 70%;
+    }
+    .btn-10{
+        width: 100%;
+    }
+}
 // .i-chess {
 //     @include size(100%, auto);
 // }
