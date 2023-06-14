@@ -11,17 +11,11 @@
         display: inline-flex;
         width: 100%;
         justify-content: center;
-        font-family: $headings;
         margin: 1rem 0 0 0;
         text-align: center;
     }
-    h1 {        
-        font-size: 2.5rem;
+    h1 {
         text-transform: uppercase;
-    }
-    h2{
-        font-size: 2rem;
-
     }
 
     span {
@@ -32,7 +26,6 @@
     }
 
     p {
-        font: 1.7rem $text;
         text-align: center;
         margin: 2rem 3rem;
     }
@@ -41,6 +34,7 @@
 .i-1 {
     @include size (100%, 60rem);
     top: 0;
+    padding: 0 !important;
 
     img {
         @include size (100%, 150%);
@@ -104,6 +98,7 @@
 .consumo ul{
     margin: 0 10%;
 }
+
 .naturaleza ul {
     @include center (center);
     flex-wrap: wrap;
@@ -131,7 +126,6 @@
         text-align: start;
         margin: 1rem 0;
         line-height: 1.6;
-        font-size: 1.1rem;
     }
     .btns{
         flex-wrap: wrap;
@@ -140,6 +134,12 @@
     }
     .btn-10{
         width: 100%;
+        margin: 0.3rem;
+    }
+    .lineas {
+        h1, h2 {
+            text-align: start;
+        }
     }
     .naturaleza ul {
         justify-content: flex-start;
