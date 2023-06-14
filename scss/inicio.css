@@ -11,16 +11,16 @@
   display: inline-flex;
   width: 100%;
   justify-content: center;
-  font: 5rem "Bebas Neue", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   margin: 1rem 0 0 0;
   text-align: center;
 }
 .i-s h1 {
-  font-size: 5rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
 }
 .i-s h2 {
-  font-size: 4rem;
+  font-size: 2rem;
 }
 .i-s span {
   margin: 0 0.8rem;
@@ -74,7 +74,7 @@
 .btn-10 {
   background: none;
   border: 2px solid;
-  font: 3rem "Bebas Neue", sans-serif;
+  font: 2.5rem "Bebas Neue", sans-serif;
   line-height: 1;
   margin: 0.5em;
   cursor: pointer;
@@ -132,6 +132,15 @@
 }
 
 @media (max-width: 1024px) {
+  .i-s {
+    padding: 30px;
+  }
+  .i-s p {
+    text-align: start;
+    margin: 1rem 0;
+    line-height: 1.6;
+    font-size: 1.1rem;
+  }
   .btns {
     flex-wrap: wrap;
     flex-direction: column;
@@ -139,5 +148,13 @@
   }
   .btn-10 {
     width: 100%;
+  }
+  .naturaleza ul {
+    justify-content: flex-start;
+    margin: 0;
+    flex-direction: column;
+  }
+  .naturaleza ul p {
+    text-align: center;
   }
 }/*# sourceMappingURL=inicio.css.map */
