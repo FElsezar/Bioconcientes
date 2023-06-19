@@ -41,7 +41,7 @@ header {
 }
 .logo1{
   padding-left: 0.5rem;
-  height: 23%;
+  height: 20%;
 }
 
 nav {
@@ -138,10 +138,10 @@ nav {
   // height: 98px;
   // right: 0px;
   // top: 0px;
-  width: 150px;
-  height: 150px;
-  right: -9px;
-  top: 10px;
+  width: 100px;
+  height: 100px;
+  right: 20px;
+  top: 1.3rem;
   border-radius: 50%;
   background-color: $accent;
   display: none;
@@ -150,18 +150,18 @@ nav {
 .line {
   display: block;
   position: absolute;
-  width: 80px;
+  width: 60px;
   height: 8px;
   background: $white;
   @include transform-origin(0px 4px);
   @include transition (opacity 0.3s $ease-in-out-cubic 0s, transform 0.24s $ease-in-out-cubic 0s);
   // left: 15px;
-  left: 36px;
+  left: 20px;
 }
 
 @for $i from 1 through 3 {
   .line:nth-child(#{$i}) {
-    top: 42px + (($i)-1)*28;
+    top: 22px + (($i)-1)*22;
   }
 }
 
@@ -279,7 +279,7 @@ nav {
 
 @media (max-width: $break-m) {
   header {
-    height: 7rem !important;
+    height: 6rem !important;
     display: flex;
   }
 

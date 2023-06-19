@@ -46,7 +46,7 @@ header {
 
 .logo1 {
   padding-left: 0.5rem;
-  height: 23%;
+  height: 20%;
 }
 
 nav {
@@ -157,10 +157,10 @@ nav {
   transform-origin: 110px 0px;
   transform: scale(0.5);
   transition: background 0.3s linear;
-  width: 150px;
-  height: 150px;
-  right: -9px;
-  top: 10px;
+  width: 100px;
+  height: 100px;
+  right: 20px;
+  top: 1.3rem;
   border-radius: 50%;
   background-color: #688C80;
   display: none;
@@ -169,24 +169,24 @@ nav {
 .line {
   display: block;
   position: absolute;
-  width: 80px;
+  width: 60px;
   height: 8px;
   background: #f1f1f1;
   transform-origin: 0px 4px;
   transition: opacity 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, transform 0.24s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
-  left: 36px;
+  left: 20px;
 }
 
 .line:nth-child(1) {
-  top: 42px;
+  top: 22px;
 }
 
 .line:nth-child(2) {
-  top: 70px;
+  top: 44px;
 }
 
 .line:nth-child(3) {
-  top: 98px;
+  top: 66px;
 }
 
 .close .line:nth-child(1) {
@@ -291,7 +291,7 @@ nav {
 
 @media (max-width: 1024px) {
   header {
-    height: 7rem !important;
+    height: 6rem !important;
     display: flex;
   }
   .h-container {

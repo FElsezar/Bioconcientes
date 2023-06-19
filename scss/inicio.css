@@ -37,14 +37,15 @@
 .i-1 img {
   width: 100%;
   height: 150%;
-  transform: translateY(-10rem);
-  -o-object-fit: none;
-     object-fit: none;
+  transform: translateY(-13rem);
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .i-1 h1 {
   position: absolute;
   font-family: "IM Fell DW Pica", serif;
   flex-wrap: wrap;
+  font-size: 4rem;
 }
 
 .i-2 {
