@@ -1,35 +1,6 @@
 @import "vars";
 
 
-.i-s {
-    // background: $grey;
-    padding: 0;
-    margin: 0;
-    @include center (center);
-
-    h1, h2 {
-        display: inline-flex;
-        width: 100%;
-        justify-content: center;
-        margin: 1rem 0 0 0;
-        text-align: center;
-    }
-    h1 {
-        text-transform: uppercase;
-    }
-
-    span {
-        margin: 0 0.8rem;
-        padding: 0 0.3rem;
-        background-color: $black;
-        color: $white;
-    }
-
-    p {
-        text-align: center;
-        margin: 2rem 3rem;
-    }
-}
 
 .i-1 {
     @include size (100%, 60rem);
@@ -49,108 +20,210 @@
         font-size: 4rem;
     }
 }
-
-.i-2 {
-    @include size(auto);
-    flex-wrap: wrap;
-    background: $accent2;
-}
-
-.i-3 {
-    flex-wrap: wrap;
-}
-
-.btns {
-    width: 90%;
-    @include center (center)
-}
-
-.btn-10 {
-    background: none;
-    border: 2px solid;
-    font: 2.5rem $headings;
-    line-height: 1;
-    margin: 0.5em;
-    cursor: pointer;
-    @include size(20%, 7rem);
-    text-align: center;
+.i-2, .i-3, .i-4, .i-5, .i-6 {
     @include center(center);
-    color: $accent;
-    transition: 0.25s;
-
-    box-shadow:
-        0.08em 0.08em 0 0 $accent,
-        inset 0.08em 0.08em 0 0 $accent;
-
-    &:hover,
-    &:focus {
-        border-color: $accent;
-        color: $comp;
-        box-shadow:
-            0 0 0 0 $accent2,
-            inset 6em 3.5em 0 0 $accent2;
-    }
 }
-
-.lineas ul {
-    list-style: disc;
-    border-bottom: 1px solid $accent
+.i-2{
+    margin-top: 2rem !important;
 }
-.consumo ul{
-    margin: 0 10%;
+.grid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    padding: 0 3rem;
 }
-
-.naturaleza ul {
-    @include center (center);
+.item-1, .item-2{
+    padding: 1rem;
+    display: flex;
     flex-wrap: wrap;
-    list-style: none;
+    align-content: space-between;
 }
-.naturaleza ul {
-    margin: 0 30%;
+.item-2{
+    @include center(center);
+    flex-direction: column;
 }
-.container {
-    @include size(100%);
+.item-2 img{
+    max-width: 50%;
+    height: auto;
 }
-.i-7 {
-    @include size (100%, auto);
+.logo2{
+    padding-top: 1rem;
+}
+.i-3{
+    padding: 1.5rem 2rem !important;
+    background-color: $accent2;
+    color: $comp2;
+}
 
-    img {
-        @include size (100%, 100%);
-    }
+.grid-obj{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr) 1fr;
+    gap: 1%;
 }
 
-@media (max-width: $break-m) {
-    .i-s{
-        padding: 30px;
-    }
-    .i-s p{
+.g-item:nth-last-child(-n+1){
+    grid-column: span 2;
+}
+.g-item{
+    @include center (center);
+    margin: -7% 0;
+    height: inherit;
+    img{
+    display: block;
+    @include size(30%);
+    object-fit: contain;
+    padding: 0 1rem;
+}
+}
+.i-4 {
+    padding: 2rem;
+    background: $background;
+    p{
         text-align: start;
-        margin: 1rem 0;
-        line-height: 1.6;
+        margin: 2rem 0;
     }
-    .btns{
-        flex-wrap: wrap;
-        flex-direction: column;
-        width: 70%;
+}
+.grid-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1%;
+    padding: 2rem;
+    :nth-child(1){ 
+        align-items: center;
     }
-    .btn-10{
-        width: 100%;
-        margin: 0.3rem;
-    }
-    .lineas {
-        h1, h2 {
-            text-align: start;
-        }
-    }
-    .naturaleza ul {
-        justify-content: flex-start;
-        margin: 0;
-        flex-direction: column;
-    }
-    .naturaleza ul p {
+    h1{
         text-align: center;
     }
 }
-// .i-chess {
-//     @include size(100%, auto);
-// }
+.g-item2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    img{
+        max-width: 700px;
+    }
+}
+.i-5{
+    background: $accent;
+    p{
+        text-align: start;
+        margin: 2rem 0;
+    }
+    h1{
+        text-align: start;
+    }
+}
+.i-6{
+    padding: 2rem;
+    flex-wrap: wrap;
+    p{
+        font-family: $cita;
+    }
+    h2{
+        margin: 0 0 0 1rem;
+    }
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    width: 100%;
+    padding: 0 3rem;
+}
+
+.grid-item {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.comillas {
+    @include size(8rem);
+    object-fit: contain;
+}
+.align {
+    @include center (center);
+    padding: 1rem;
+}
+.picture {
+    @include size(7rem);
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+@media (max-width: $break-m) {
+    .i-2{
+        padding: 0;
+    }
+    .grid {
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding: 0;
+    }
+    .grid-item{
+        flex-wrap: nowrap;
+        p{
+            padding: 0 1rem;
+        }
+    }
+    .item-2 img{
+        max-width: 90%;
+    }    
+    .g-item{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .grid-obj{
+        gap: 1% 3%;
+    }
+    .g-item2{
+        align-items: center;
+        :nth-child(1){
+            width: 100%;
+        }
+    }
+}
+@media (max-width: $break-s) {
+    .i-3{
+        padding: 2rem 0;
+    }
+    .grid-item{
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0;
+        p{
+            padding: 0;
+        }
+    }
+    .grid2{
+        @include center(center);
+        flex-wrap: wrap;
+    }
+    .item-2{
+        max-width: 60%;
+    }
+    .grid-obj{
+        display: block;
+    }
+    .g-item{
+        flex-direction: row;
+        margin: 0;
+    }
+    .grid-2{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .g-item2{
+        :nth-child(1){
+            width: 75%;
+            padding-bottom: 1rem;
+        }
+        
+        p{
+            margin: 0;
+        }
+    }
+}

@@ -59,16 +59,5 @@ function navToggle(e) {
   nav.className = closed ? 'out' : 'in';
 }
 
-//Header posicionamiento
-window.addEventListener('scroll', function() {
-  var header = document.getElementById('header');
-  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  var scrollThreshold = 0; // Posición de desplazamiento desde donde se cambia el color
 
-  if (scrollTop > scrollThreshold) {
-    header.classList.add('header-scrolled');
-  } else {
-    header.classList.remove('header-scrolled');
-  }
-});
 

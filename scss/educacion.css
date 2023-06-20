@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=Comfortaa:wght@300;400;500;600;700&family=Gabriela&family=IM+Fell+DW+Pica:ital@0;1&family=Kreon:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+main {
+  margin-top: 9rem;
+}
+
+.i-2 {
+  width: auto;
+  height: auto;
+  flex-wrap: wrap;
+  background: #3b865b;
+  color: #f1e4c4;
+}
+.i-2 h1 {
+  color: #f1e4c4;
+}
+
+.i-3 {
+  flex-wrap: wrap;
+}
+.i-3 strong {
+  color: #304d50;
+}
+
+.btns {
+  width: 90%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-10 {
+  background: none;
+  border: 2px solid;
+  font: 2.5rem "Bebas Neue", sans-serif;
+  line-height: 1;
+  margin: 0.5em;
+  cursor: pointer;
+  width: 20%;
+  height: 7rem;
+  text-align: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  color: #3b8659;
+  transition: 0.25s;
+  box-shadow: 0.08em 0.08em 0 0 #3b8659, inset 0.08em 0.08em 0 0 #3b8659;
+}
+.btn-10:hover, .btn-10:focus {
+  border-color: #3b8659;
+  color: #D9AD7C;
+  box-shadow: 0 0 0 0 #3b865b, inset 6em 3.5em 0 0 #3b865b;
+}
+.btn-10:hover a, .btn-10:focus a {
+  color: #D9AD7C;
+}
+
+.lineas ul {
+  list-style: disc;
+  border-bottom: 1px solid #3b8659;
+}
+
+.consumo ul {
+  margin: 0 10%;
+}
+
+.naturaleza ul {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.naturaleza ul {
+  margin: 0 30%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.i-7 {
+  width: 100%;
+  height: auto;
+}
+.i-7 img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1024px) {
+  main {
+    margin-top: 6rem;
+  }
+  .btns {
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 70%;
+  }
+  .btn-10 {
+    width: 100%;
+    margin: 0.3rem;
+  }
+  .lineas h1, .lineas h2 {
+    text-align: start;
+  }
+  .naturaleza ul {
+    justify-content: flex-start;
+    margin: 0;
+    flex-direction: column;
+  }
+  .naturaleza ul p {
+    text-align: center;
+  }
+}/*# sourceMappingURL=educacion.css.map */
