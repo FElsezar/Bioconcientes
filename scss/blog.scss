@@ -2,6 +2,10 @@
 
 main {
     padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+.i-s{
+  padding: 2rem;
 }
 
 .card-grid{
@@ -93,6 +97,9 @@ main {
       }
     }
   }
+h3{
+  text-align: center;
+}
   
   /* divided into as many parts as there are spans, each part decreasing the translateY by -100% */
   @keyframes animateWords {
@@ -116,6 +123,9 @@ main {
 @media (max-width: $break-m) {
   main {
     padding-top: 6rem;
+    }
+    .i-s{
+      padding: 1rem;
     }
     .card-grid{
         grid-template-columns: repeat(2,1fr);

@@ -2,6 +2,7 @@ const templates = {
     huella: `
     <div class="b-item">
     <h1>¿Qué es la huella ecológica?</h1>
+    <div class="separador"></div>
     <p>El concepto "huella ecológica" surge como un indicador de sostenibilidad que trata de medir el impacto que nuestro modo de vida tiene sobre el entorno.</p>
     <p>Todas las decisiones que como consumidores tomamos en nuestra vida cotidiana tienen un impacto sobre el planeta. Ese impacto ambiental se expresa como la cantidad de terreno biológicamente productivo que se necesita por persona para producir los recursos necesarios para mantener su estilo de vida.
     </p>
@@ -12,6 +13,7 @@ const templates = {
     rrr: `
     <div class="b-item">
                 <h1>¿Qué son las 3R?</h1>
+                <div class="separador"></div>
                 <p>La regla de las tres erres, también conocida como las tres erres de la ecología o simplemente 3R, es
                     una propuesta sobre hábitos de consumo. Durante la Cumbre del G8 en junio de 2004, el Primer
                     Ministro del Japón, Koizumi Junichiro, presentó la Iniciativa, y explicó que ésta busca construir
@@ -53,7 +55,9 @@ const templates = {
     especies: `
     <div class="b-item">
     <h1>Nuestra especie del día</h1>
-    <h2>Guanaco <br> <em>Lama guanicoe</em></h2>
+    <h2>Guanaco</h2>
+    <h2><em>Lama guanicoe</em></h2>
+    <div class="separador"></div>
     <p>El guanaco es uno de los grandes herbívoros de Sudamérica y el mayor
         de los camélidos silvestres de este continente. Esta especie manifiesta una
         serie de adaptaciones anatómicas y fisiológicas que le permiten sobrevivir
@@ -114,6 +118,7 @@ const templates = {
     <h1>Fecha para el calendario</h1>
     <h2>Día Internacional de la Preservación de la Capa de ozono</h2>
     <h3>16 de septiembre</h3>
+    <div class="separador"></div>
     <p>La capa de ozono es una franja frágil de gas que protege la Tierra de los efectos nocivos de los rayos solares, contribuyendo así a preservar la vida en el planeta.</p>
     <p>El año pasado se cumplieron 35 años de la adopción del Protocolo de Montreal, uno de los acuerdos medioambientales de mayor éxito, que puso remedio a una de las mayores amenazas a las que se había enfrentado la humanidad: el agotamiento de la capa de ozono.</p>
     <p>La utilización durante años de ciertos productos químicos había dañado la capa, poniendo en peligro la existencia del ser humano y la del resto de seres vivos del planeta. Un esfuerzo internacional conjunto permitió la eliminación y reducción del uso de sustancias que agotaban la capa de ozono, ayudando no solo a protegerla para la generación actual y las venideras, sino también a mejorar los resultados de las iniciativas dirigidas a afrontar al cambio climático. Esos esfuerzos han protegido asímismo la salud humana y los ecosistemas reduciendo la radiación ultravioleta del sol que llega a la Tierra.</p>
@@ -124,7 +129,7 @@ const templates = {
 var app = new Vue({
     el: "#app",
     data: {
-        view: 'rrr',
+        view: '',
     },
     components: {
         huella: {
