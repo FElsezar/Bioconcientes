@@ -20,7 +20,7 @@ let footer = `
                     </div>
                     <div class="separador"></div>
                     <div class="text1">
-                        <p>Somos Bioconcientes, la página web dedicada a la educación ambiental para todos los niveles.</p>
+                        <p>Somos Bioconscientes, la página web dedicada a la educación ambiental para todos los niveles.</p>
                     </div>
                 </div>
                 <div class="f-column">
@@ -90,7 +90,7 @@ let footer = `
             </div>
         </section>
         <section class="f-last">
-            <p>2023 | Bicoconcientes | Todos los derechos reservados ®</p>
+            <p>2023 | Bioconscientes | Todos los derechos reservados ®</p>
         </section>
 `
 document.getElementById("idfooter").innerHTML = footer
