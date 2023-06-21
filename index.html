@@ -7,13 +7,14 @@
   <link rel="stylesheet" href="scss/main.css">
   <link rel="stylesheet" href="scss/vars.css">
   <link rel="stylesheet" href="scss/header.css">
+  <link rel="stylesheet" href="scss/footer.css">
   <link rel="stylesheet" href="scss/inicio.css">
   <title>Bioconcientes</title>
 </head>
 
 <body>
   <header id="header">
-    <div class="h-container">
+    <div class="h-container" id="heading">
       <div class="logo">
         <!-- <img class="logo0" src="img/bioconcientes.png" alt=""> -->
         <img class="logo0" src="img/bc-logo.png" alt="">
@@ -23,15 +24,12 @@
         <ul class="nav-menu">
           <li class="menu-item"><a href="index.html" class="nav-label">Inicio</a></li>
           <li class="menu-item"><a href="educacion.html" class="nav-label">Educación</a></li>
-          <li class="menu-item"><a href="" class="nav-label">Ambiente</a></li>
-          <li class="menu-item"><a href="" class="nav-label">Blog</a></li>
-          <li class="menu-item"><a href="" class="nav-label">Nosotros</a></li>
+          <li class="menu-item"><a href="ambiente.html" class="nav-label">Ambiente</a></li>
+          <li class="menu-item"><a href="blog.html" class="nav-label">Blog</a></li>
+          <li class="menu-item"><a href="nosotros.html" class="nav-label">Nosotros</a></li>
         </ul>
       </nav>
       <div class="control">
-        <div class="wrap">
-          <a class="btn-11" href="#">Contacto</a>
-        </div>
         <div id="nav-trigger" class="nav-trigger open">
           <span class="line"></span>
           <span class="line"></span>
@@ -39,10 +37,7 @@
         </div>
       </div>
     </div>
-
   </header>
-
-
   <main>
     <section class="i-s i-1">
       <!-- <img src="img/background.jpg" alt=""> -->
@@ -54,8 +49,7 @@
         <div class="item-1">
           <h1>Bioconcientes</h1>
           <div class="separador"></div>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, temporibus sapiente. Doloremque eum assumenda cupiditate in, dolor quibusdam nulla tempore provident vel temporibus facere aliquam iure est libero et harum.
-          Incidunt dignissimos qui impedit ullam sapiente omnis aut esse ipsam placeat perspiciatis, temporibus animi sequi, magnam ratione consequatur molestias ducimus a laborum unde pariatur, nesciunt sit! Quibusdam ea autem quo.
+          <p>Somos Bioconcientes, la página web dedicada a la educación ambiental para todos los niveles. Nuestro proyecto comenzó con la necesidad de un medio de difusión. Consideramos que el ser humano es parte de la naturaleza, por lo que promovemos contenido orientado bajo esta lógica. Acá podrás encontrar material informativo, didáctico y curiosidades acerca de temáticas ambientales.
           </p>
         </div>
         <div class="item-2">
@@ -102,7 +96,7 @@
           <iframe width="560" height="315" src="https://www.youtube.com/embed/pwNTxJf5qy4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
         <div class="g-item2">
-          <h1>Educación para la Sustentabilidad</h1>
+          <h1>Educación para la Sostenibilidad</h1>
           <p>La educación ambiental busca construir un cambio individual, social y colectivo. Busca replantear el modo en el que vivimos y realizar acciones acordes a la situación de crisis que enfrenta nuestra casa común. Esto implica <strong>repensar los propósitos de la enseñanza para la formación en valores y la integración curricular</strong>. Implica ampliar la mirada.
           Las temáticas ambientales suelen dotar de sentido a gran cantidad de contenidos que se aprenden en la escuela. La integralidad y la transversalidad son conceptos claves para todos los niveles.</p>
         </div>
@@ -141,20 +135,13 @@
       <!-- <section class="i-s i-7">
       <img src="/img/chess.png" alt="">
     </section> -->
-      <!-- <section>
-      <h1>
-        Re
-        <span>
-          <span>ducir</span>
-          <span>ciclar</span>
-          <span>utilizar</span>
-          <span>ducir</span>
-        </span>
-      </h1>
-    </section> -->
   </main>
-
+  <footer id="idfooter">
+  </footer>
+  <script src="js/footer.js"></script>
   <script src="/js/navbar.js"></script>
+  <script src="https://unpkg.com/vue@3"></script>
+  <script src="js/vue.js"></script>
 </body>
 
 </html>

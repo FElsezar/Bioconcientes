@@ -16,7 +16,9 @@ $headings: 'Bebas Neue', sans-serif;
 $text: 'Raleway', sans-serif;
 $pica: 'IM Fell DW Pica', serif;
 $cita: 'Gabriela', serif;
+$kreon: 'Kreon', serif;
 $white: #f1f1f1;
+$u-white: rgba(255,255,255,0.9);
 $grey-black: #303030;
 $grey: #4d4d4d;
 $black: #232323;
@@ -37,6 +39,7 @@ $accent2: $g-lig;
 $accent3: $g-str;
 $comp: $b-str;
 $comp2: $b-lig;
+$comp3: $b-mid;
 $color: $black;
 
 $ease-in-cubic: cubic-bezier(0.55, 0.055, 0.675, 0.19);
@@ -52,6 +55,13 @@ $btn-height: 28px !default;
 $btn-full: $btn-height+$btn-width !default;
 $btn-half: calc($btn-full / 2)!default;
 $bg-color: $g-lig !default;
+
+$spacing-s: 8px;
+$spacing-m: 16px;
+$spacing-l: 24px;
+$spacing-xl: 32px;
+$spacing-xxl: 64px;
+$width-container: 1200px;
 
 @mixin center($center){
   display: flex;

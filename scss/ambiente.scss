@@ -1,0 +1,14 @@
+@import "vars";
+
+main {
+    margin-top: 9rem;
+}
+.a-1{
+    @include center (center);
+    flex-direction: column;
+}
+@media (max-width: $break-s) {
+    main{
+        margin-top: 6rem;
+    }
+}

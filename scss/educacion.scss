@@ -56,7 +56,9 @@ main {
     }
 }
 
-
+.lineas{
+    transition: 0.5s ease-in-out;
+}
 .lineas ul {
     list-style: disc;
     border-bottom: 1px solid $accent

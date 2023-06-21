@@ -56,6 +56,10 @@ main {
   color: #D9AD7C;
 }
 
+.lineas {
+  transition: 0.5s ease-in-out;
+}
+
 .lineas ul {
   list-style: disc;
   border-bottom: 1px solid #3b8659;
