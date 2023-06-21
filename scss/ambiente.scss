@@ -6,6 +6,9 @@ main {
 .a-1{
     @include center (center);
     flex-direction: column;
+    img{
+        width: 100%;
+    }
 }
 @media (max-width: $break-s) {
     main{

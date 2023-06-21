@@ -32,9 +32,7 @@ function resize() {
     }
 
     header.style.height = windowHeight + 'px';
-    heading.style.fontSize = headingSize + 'px';
     heading.style.height = headingSize + 'px';
-    heading.style.marginTop = '-' + headingSize * 0.6 + 'px';
   } else {
     revertChanges();
   }

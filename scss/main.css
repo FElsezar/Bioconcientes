@@ -10,7 +10,6 @@ body {
   box-sizing: border-box;
   color: #232323;
   font: 1.1rem "Raleway", sans-serif;
-  scroll-behavior: smooth;
 }
 
 section {
