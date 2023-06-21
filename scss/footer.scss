@@ -1,0 +1,154 @@
+@import "vars";
+
+footer {
+    background-color: $comp;
+    @include size(100%, auto);
+}
+
+.elementor-shape-fill {
+    fill: $background;
+}
+
+.f-cont {
+    max-width: 1140px;
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+}
+
+.f-container {
+    display: flex;
+
+    :nth-child(2) {
+        h1 {
+            height: 17%;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+.f-column {
+    width: 33.333%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+}
+
+.f-logo {
+    margin-bottom: 1rem;
+    @include center (center);
+    justify-content: flex-start;
+    flex-direction: row;
+
+    img {
+        width: 8rem;
+        padding: 0.5rem;
+    }
+}
+
+.f-menu-item {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: .5rem;
+
+    a {
+        font-weight: 500;
+
+        &:hover {
+            color: $accent2;
+        }
+    }
+}
+
+.wrap {
+    height: 10%;
+    position: relative;
+    display: flex;
+    font: 2rem $headings;
+    font-weight: bold;
+}
+
+//button
+.btn-11 {
+    position: relative;
+    overflow: hidden;
+    @include size(100%, $btn-height*1.5);
+    max-width: $btn-width;
+    text-transform: uppercase;
+    border: 1px solid currentColor;
+    border-radius: 1rem;
+    @include center (center);
+    $btn-color: $accent2;
+    background-color: $comp3;
+    $btn-color-dark: shade($btn-color, 40%);
+    color: tint($btn-color);
+    margin: 1rem 0;
+
+    &:hover {
+        background-color: $accent2;
+    }
+}
+
+
+.f-list {
+    display: flex;
+
+    li {
+        margin-right: 1rem;
+        padding: 0.4rem;
+        background-color: $comp2;
+        border: 1px solid $comp2;
+        border-radius: 0.6rem;
+        cursor: pointer;
+    }
+
+    a {
+        svg {
+            @include size (32px)
+        }
+
+        &:hover {
+            color: $accent2;
+        }
+    }
+}
+.f-last{
+    background-color: $grey-black;
+    height: 3rem;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    @include center (center);
+    p{
+        color: $white;
+        font: 1.1rem kreon;
+    }
+}
+@media (max-width: $break-m) {
+    .f-container:nth-child(2) {
+        h1 {
+            height: 21%;
+        }
+    }
+}
+
+@media (max-width: $break-s) {
+    .f-container {
+        flex-direction: column;
+
+        :nth-child(2) {
+            h1 {
+                height: 21%;
+            }
+        }
+    }
+
+    .f-column {
+        width: 86%;
+    }
+
+    .f-logo {
+        flex-direction: column;
+    }
+}

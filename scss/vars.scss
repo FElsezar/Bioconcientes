@@ -3,6 +3,7 @@
 // $brown: #af5015
 // $verde: #5EB23F
 
+
 // font-family: 'Bebas Neue', sans-serif;
       // 'Bree Serif', serif;
       // 'Comfortaa', cursive;
@@ -14,18 +15,32 @@
 $headings: 'Bebas Neue', sans-serif;
 $text: 'Raleway', sans-serif;
 $pica: 'IM Fell DW Pica', serif;
+$cita: 'Gabriela', serif;
+$kreon: 'Kreon', serif;
 $white: #f1f1f1;
+$u-white: rgba(255,255,255,0.9);
 $grey-black: #303030;
 $grey: #4d4d4d;
-// $accent: #546d54;
-$accent: #688C80;
-$accent2:#81A69B;
-// $comp: #DEA614; 
-$comp: #EBBF54;
+$black: #232323;
+$g-str: #304d50;
+$g-mid: #3b8659;
+$g-lig: #3b865b;
+$g-slig: #cedfc3;
+$b-str: #D9AD7C;
+$b-mid: #efcf94;
+$b-lig: #f1e4c4;
+$b-slig: #f1e5cf;
 $background: #cfcfcf;
-$color: #232423;
-$black: #232423;
+$black: #232323;
 $border-clr: #11111111;
+
+$accent: $g-mid;
+$accent2: $g-lig;
+$accent3: $g-str;
+$comp: $b-str;
+$comp2: $b-lig;
+$comp3: $b-mid;
+$color: $black;
 
 $ease-in-cubic: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 $ease-out-cubic: cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -39,7 +54,14 @@ $btn-width: 200px !default;
 $btn-height: 28px !default;
 $btn-full: $btn-height+$btn-width !default;
 $btn-half: calc($btn-full / 2)!default;
-$bg-color: $accent !default;
+$bg-color: $g-lig !default;
+
+$spacing-s: 8px;
+$spacing-m: 16px;
+$spacing-l: 24px;
+$spacing-xl: 32px;
+$spacing-xxl: 64px;
+$width-container: 1200px;
 
 @mixin center($center){
   display: flex;

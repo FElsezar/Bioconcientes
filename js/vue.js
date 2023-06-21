@@ -9022,6 +9022,7 @@
     /*  */
   
     // install platform specific utils
+    Vue.config.productionTip = false;
     Vue.config.mustUseProp = mustUseProp;
     Vue.config.isReservedTag = isReservedTag;
     Vue.config.isReservedAttr = isReservedAttr;

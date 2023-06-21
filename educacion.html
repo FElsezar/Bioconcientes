@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="scss/main.css">
+  <link rel="stylesheet" href="scss/vars.css">
+  <link rel="stylesheet" href="scss/header.css">
+  <link rel="stylesheet" href="scss/footer.css">
+  <link rel="stylesheet" href="scss/educacion.css">
+  <title>Bioconscientes</title>
+</head>
+
+<body>
+  <header id="header">
+    <div class="h-container" id="heading">
+      <div class="logo">
+        <!-- <img class="logo0" src="img/bioconcientes.png" alt=""> -->
+        <img class="logo0" src="img/bc-logo.png" alt="">
+        <img class="logo1" src="img/bc-logo1.png" alt="">
+      </div>
+      <nav id="nav" class="out">
+        <ul class="nav-menu">
+          <li class="menu-item"><a href="index.html" class="nav-label">Inicio</a></li>
+          <li class="menu-item"><a href="educacion.html" class="nav-label">Educación</a></li>
+          <li class="menu-item"><a href="ambiente.html" class="nav-label">Ambiente</a></li>
+          <li class="menu-item"><a href="blog.html" class="nav-label">Blog</a></li>
+          <li class="menu-item"><a href="nosotros.html" class="nav-label">Nosotros</a></li>
+        </ul>
+      </nav>
+      <div class="control">
+        <!-- <div class="wrap">
+          <a class="btn-11" href="#">Contacto</a>
+        </div> -->
+        <div id="nav-trigger" class="nav-trigger open">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="i-s i-2">
+      <h1>¿Qué es la educación ambiental?</h1>
+      <p><strong>“Educación Ambiental Integral (EAI):</strong> es un proceso educativo permanente con contenidos
+        temáticos específicos y transversales, que tiene como propósito general la formación de una conciencia
+        ambiental, a la que articulan e impulsan procesos educativos integrales orientados a la construcción de una
+        racionalidad, en la cual distintos conocimientos, saberes, valores y practicas confluyan y aporten a la
+        formación ciudadana y al ejercicio del derecho a un ambiente sano, digno y diverso…» <br> (Ley 27.621 para la
+        Implementación de la Educación Ambiental Integral en la República Argentina).</p>
+    </section>
+    <section class="i-s i-3" id="app">
+      <h1>¿Qué son las líneas de educación ambiental?</h1>
+      <p>Al ser una disciplina transversal persigue la integración de distintas sub-disciplinas y busca implementar
+        propuestas educativas que no aíslen lo ambiental de lo social, sino que vinculen el ambiente social y el físico
+        desde la perspectiva de las necesidades de desarrollo. Conocé más:</p>
+      <div class="btns">
+        <button class="btn-10" @click="view = 'arte'"><a>Arte</a></button>
+        <button class=" btn-10" @click="view = 'consumo' "><a>Consumo responsable</a></button>
+        <button class="btn-10" @click="view = 'naturaleza' "><a>Naturaleza</a></button>
+        <button class="btn-10" @click="view = 'salud' "><a>Salud</a></button>
+        <button class="btn-10" @click="view = 'valores' "><a>Valores</a></button>
+      </div>
+      <div class="container">
+        <component :is="view"></component>
+      </div>
+    </section>
+  </main>
+  <footer id="idfooter">
+  </footer>
+  <script src="js/footer.js"></script>
+  <script src="/js/navbar.js"></script>
+  <script src="https://unpkg.com/vue@3"></script>
+  <script src="js/vue.js"></script>
+  <script src="js/lineamientos.js"></script>
+</body>
+
+</html>

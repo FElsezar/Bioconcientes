@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="stylesheet" href="scss/vars.css">
+    <link rel="stylesheet" href="scss/header.css">
+    <link rel="stylesheet" href="scss/footer.css">
+    <link rel="stylesheet" href="scss/blog.css">
+    <title>Bioconscientes</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="h-container" id="heading">
+            <div class="logo">
+                <!-- <img class="logo0" src="img/bioconcientes.png" alt=""> -->
+                <img class="logo0" src="img/bc-logo.png" alt="">
+                <img class="logo1" src="img/bc-logo1.png" alt="">
+            </div>
+            <nav id="nav" class="out">
+                <ul class="nav-menu">
+                    <li class="menu-item"><a href="index.html" class="nav-label">Inicio</a></li>
+                    <li class="menu-item"><a href="educacion.html" class="nav-label">Educación</a></li>
+                    <li class="menu-item"><a href="ambiente.html" class="nav-label">Ambiente</a></li>
+                    <li class="menu-item"><a href="blog.html" class="nav-label">Blog</a></li>
+                    <li class="menu-item"><a href="nosotros.html" class="nav-label">Nosotros</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="control">
+                <!-- <div class="wrap">
+                <a class="btn-11" href="#">Contacto</a>
+              </div> -->
+                <div id="nav-trigger" class="nav-trigger open">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="app">
+        <div class="card-grid">
+            <a href="#" class="card" @click="view = 'rrr' ">
+                <div class="card__background" style="background-image: url(img/3R.png)">
+
+                </div>
+                <div class="card__content">
+                    <p class="card__category">Educación ambiental</p>
+                    <h3 class="card__heading">Las 3R</h3>
+                </div>
+            </a>
+            <a href="#" class="card" @click="view = 'huella'">
+                <div class="card__background" style="background-image: url(img/huella.jpg)">
+                </div>
+                <div class="card__content">
+                    <p class="card__category">Recursos</p>
+                    <h3 class="card__heading">Huella ecológica</h3>
+                </div>
+            </a>
+            <a href="#" class="card" @click="view = 'especies' ">
+                
+                <div class="card__background"
+                    style="background-image: url(https://i0.wp.com/patagonianatural.org.ar/wp-content/uploads/2021/07/05.jpg?fit=1000%2C750&ssl=1)">
+
+                </div>
+                <div class="card__content">
+                    <p class="card__category">Naturaleza</p>
+                    <h3 class="card__heading">Especie diaria</h3>
+                </div>
+            </a>
+            <a href="#" class="card" @click="view = 'fecha' ">
+                <div class="card__background"
+                    style="background-image: url(https://www.un.org/sites/un2.un.org/files/styles/banner-image-style-27-10/public/2020/11/ozone-day-index.jpg)">
+
+                </div>
+                <div class="card__content">
+                    <p class="card__category">Fechas</p>
+                    <h3 class="card__heading">Día Internacional de la Preservación de la Capa de Ozono <br>16 de
+                        septiembre</h3>
+                </div>
+            </a>
+        </div>
+        <section class="i-s">
+            <div class="container">
+                <component :is="view"></component>
+            </div>
+        </section>
+        
+        
+    </main>
+    <footer id="idfooter">
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14"></script>
+    <script src="js/blog.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="/js/navbar.js"></script>
+    <script src="js/especies.js"></script>
+</body>
+
+</html>

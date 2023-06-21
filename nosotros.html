@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="stylesheet" href="scss/vars.css">
+    <link rel="stylesheet" href="scss/header.css">
+    <link rel="stylesheet" href="scss/footer.css">
+    <link rel="stylesheet" href="scss/nosotros.css">
+    <title>Bioconscientes</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="h-container" id="heading">
+            <div class="logo">
+              <!-- <img class="logo0" src="img/bioconcientes.png" alt=""> -->
+              <img class="logo0" src="img/bc-logo.png" alt="">
+              <img class="logo1" src="img/bc-logo1.png" alt="">
+            </div>
+            <nav id="nav" class="out">
+              <ul class="nav-menu">
+                <li class="menu-item"><a href="index.html" class="nav-label">Inicio</a></li>
+                <li class="menu-item"><a href="educacion.html" class="nav-label">Educación</a></li>
+                <li class="menu-item"><a href="ambiente.html" class="nav-label">Ambiente</a></li>
+                <li class="menu-item"><a href="blog.html" class="nav-label">Blog</a></li>
+                <li class="menu-item"><a href="nosotros.html" class="nav-label">Nosotros</a></li>
+              </ul>
+            </nav>
+            <div class="control">
+              <!-- <div class="wrap">
+                <a class="btn-11" href="#">Contacto</a>
+              </div> -->
+              <div id="nav-trigger" class="nav-trigger open">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+              </div>
+            </div>
+          </div>
+    </header>
+    <main>
+      <section class="form-gral">
+        <section class="form-contacto">
+            <h2>Contactate con nosotros</h2>
+            <form id="form" action="https://formspree.io/f/mbjeeaak"
+            method="POST">
+                <div class="form-consulta">
+                    <input type="text" name="name" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Nombre</label>
+                </div>
+                <div class="form-consulta">
+                    <input type="text" name="lastname" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Apellido</label>
+                </div>
+                <div class="form-consulta">
+                    <input type="email" name="email" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Email</label>
+                </div>
+                <div class="form-consulta">
+                    <input type="number" name="number" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Telefono</label>
+                </div>
+                <div class="form-consulta">
+                    <textarea cols="20" rows="10" minlength="1" name="message" required></textarea>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Consulta</label>
+                </div>
+                <span class="form-consulta">
+                    <input class="form-button" id="my-form-button" type="submit" value="Enviar">
+                </span>
+            </form>
+        </section>
+
+        <section class="form-information">
+            <span class="form-help">
+                <p class="info-contacto">
+                    TELÉFONOS <br>
+                    +54 9 2945 123456 / 456789
+                    <br><br>
+                    E-MAIL <br>
+                    info@bioconscientes.com
+                    <br><br>
+                    UNPSJB <br>
+                    Sede Esquel
+                </p>
+            </span>
+        </section>
+    </section>
+    </main>
+    <footer id="idfooter">
+    </footer>
+    <script src="js/footer.js"></script>
+    <script src="/js/navbar.js"></script>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="js/vue.js"></script>
+</body>
+
+</html>

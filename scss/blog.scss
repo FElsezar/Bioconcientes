@@ -1,0 +1,141 @@
+@import "vars";
+
+main {
+    padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+.i-s{
+  padding: 2rem;
+}
+
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    gap: $spacing-l;
+    :nth-child(4){
+      h3{
+        font-size: 1.5rem;
+      }
+    }
+}
+
+.card{
+    position: relative;
+    margin: 1rem;
+    &::before{
+        content: "";
+        display: block;
+        padding-bottom: 150%;
+        width: 100%;
+    }
+}
+.card__background{
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    border-radius: $spacing-l;
+    bottom: 0;
+    filter: brightness(0.75) saturate(1.2) contrast(0.85);
+    left: 0;
+    right: 0;
+    top: 0;
+    transform-origin: center;
+    transform: scale(1) translateZ(0);
+    transition: filter 200ms linear, transform 200ms linear;
+}
+.card:hover .card__background{
+    transform: scale(1.05) translateZ(0);
+  }
+  
+  .card-grid:hover > .card:not(:hover) .card__background{
+    filter: brightness(0.4) saturate(0.8) contrast(0.8) blur(0px);
+  }
+  
+  .card__content{
+    left: 0;
+    position: absolute;
+    top: 0;
+    padding: $spacing-l;
+    h3{
+        margin: 0;
+    }
+    p{
+        margin: 0 0 8px 0;
+    }
+  }
+  
+  .card__category{
+    color: $u-white;
+    font-size: 0.9rem;
+    margin-bottom: $spacing-s;
+    text-transform: uppercase;
+  }
+  
+  .card__heading{
+    color: $u-white;
+    font-size: 1.9rem;
+    text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+    line-height: 1.4;
+  }
+
+
+.rrr h2 {
+    font-size: 3em;
+    
+    > span {
+      position: relative;
+      display: inline-block;
+      color: $accent;
+      height: 1.25em;
+      vertical-align: bottom;
+      overflow: hidden;
+      background-color: transparent !important;
+      span {
+        display: block;
+        animation: animateWords 5s infinite ease;
+      }
+    }
+  }
+h3{
+  text-align: center;
+}
+  
+  /* divided into as many parts as there are spans, each part decreasing the translateY by -100% */
+  @keyframes animateWords {
+    0% {
+      transform: translateY(0%);
+    }
+    
+    33.33% {
+      transform: translateY(-100%);
+    }
+    
+    66.66% {
+      transform: translateY(-200%);
+    }
+    
+    100% {
+      transform: translateY(-300%);
+    }
+}
+
+@media (max-width: $break-m) {
+  main {
+    padding-top: 6rem;
+    }
+    .i-s{
+      padding: 1rem;
+    }
+    .card-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width: $break-s) {
+    .card-grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .card {
+      height: 15rem;
+    }
+}

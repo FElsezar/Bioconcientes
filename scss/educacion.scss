@@ -1,0 +1,115 @@
+@import "vars";
+
+main {
+    margin-top: 9rem;
+}
+
+.i-2 {
+    @include size(auto);
+    flex-wrap: wrap;
+    background: $accent2;
+    color: $comp2;
+    h1{
+        color: $comp2;
+    }
+}
+
+.i-3 {
+    flex-wrap: wrap;
+    strong{
+        color: $accent3;
+    }
+}
+
+.btns {
+    width: 90%;
+    @include center (center)
+}
+
+.btn-10 {
+    background: none;
+    border: 2px solid;
+    font: 2.5rem $headings;
+    line-height: 1;
+    margin: 0.5em;
+    cursor: pointer;
+    @include size(20%, 7rem);
+    text-align: center;
+    @include center(center);
+    color: $accent;
+    transition: 0.25s;
+
+    box-shadow:
+        0.08em 0.08em 0 0 $accent,
+        inset 0.08em 0.08em 0 0 $accent;
+
+    &:hover,
+    &:focus {
+        border-color: $accent;
+        color: $comp;
+        box-shadow:
+            0 0 0 0 $accent2,
+            inset 6em 3.5em 0 0 $accent2;
+        a{
+            color: $comp;
+        }
+    }
+}
+
+.lineas{
+    transition: 0.5s ease-in-out;
+}
+.lineas ul {
+    list-style: disc;
+    border-bottom: 1px solid $accent
+}
+.consumo ul{
+    margin: 0 10%;
+}
+
+.naturaleza ul {
+    @include center (center);
+    flex-wrap: wrap;
+    list-style: none;
+}
+.naturaleza ul {
+    margin: 0 30%;
+}
+.container {
+    @include size(100%);
+}
+.i-7 {
+    @include size (100%, auto);
+
+    img {
+        @include size (100%, 100%);
+    }
+}
+
+@media (max-width: $break-m) {
+    main {
+        margin-top: 6rem;
+    }
+    .btns{
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 70%;
+    }
+    .btn-10{
+        width: 100%;
+        margin: 0.3rem;
+    }
+    .lineas {
+        h1, h2 {
+            text-align: start;
+        }
+    }
+    .naturaleza ul {
+        justify-content: flex-start;
+        margin: 0;
+        flex-direction: column;
+    }
+    .naturaleza ul p {
+        text-align: center;
+    }
+}

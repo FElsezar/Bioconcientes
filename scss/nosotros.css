@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=Comfortaa:wght@300;400;500;600;700&family=Gabriela&family=IM+Fell+DW+Pica:ital@0;1&family=Kreon:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+main {
+  margin-top: 9rem;
+}
+
+.form-gral {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: auto;
+  max-width: 1320px;
+}
+
+/*Parte izquierda*/
+.form-contacto {
+  width: 50%;
+  align-items: center;
+  flex-direction: column;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+form {
+  padding: 1rem 0;
+  width: 50%;
+}
+
+.form-consulta {
+  width: 100%;
+  position: relative;
+  margin: 2rem 0;
+  display: block;
+}
+
+input,
+textarea {
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #3b865b;
+  background-color: transparent;
+  font-family: "Raleway", sans-serif;
+  color: #3b865b;
+  font-size: 18px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+label {
+  color: #232323;
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  top: -20px;
+  color: #3b8659;
+}
+
+textarea:focus ~ label {
+  top: -20px;
+  color: #3b8659;
+}
+
+textarea:valid ~ label {
+  top: -20px;
+  color: #3b8659;
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.bar:before,
+.bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  position: absolute;
+  background: #3b8659;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+  left: 50%;
+}
+
+.bar:after {
+  right: 50%;
+}
+
+input:focus ~ .bar:before,
+input:focus ~ .bar:after,
+textarea:focus ~ .bar:before,
+textarea:focus ~ .bar:after {
+  width: 50%;
+}
+
+.highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+input:focus ~ .highlight,
+textarea:focus ~ .highlight {
+  animation: inputHighlighter 0.3s ease;
+}
+@keyframes inputHighlighter {
+  from {
+    background: #3b8659;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+.form-button {
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+  font-size: 20px;
+  color: #3b8659;
+}
+
+.form-button:hover {
+  color: #3b8659;
+  cursor: pointer;
+}
+
+/*Parte derecha*/
+.form-information {
+  width: 30%;
+  padding-left: 2rem;
+}
+
+.form-help {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-contacto {
+  font-size: 20px;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  main {
+    margin-top: 6rem;
+  }
+}
+@media (max-width: 769px) {
+  .form-gral {
+    flex-direction: column;
+  }
+  .form-contacto {
+    width: 100%;
+  }
+  .form-information {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+}/*# sourceMappingURL=nosotros.css.map */
