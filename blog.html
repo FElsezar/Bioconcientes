@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="scss/header.css">
     <link rel="stylesheet" href="scss/footer.css">
     <link rel="stylesheet" href="scss/blog.css">
-    <title>Bioconcientes</title>
+    <title>Bioconscientes</title>
 </head>
 
 <body>
@@ -62,6 +62,7 @@
                 </div>
             </a>
             <a href="#" class="card" @click="view = 'especies' ">
+                
                 <div class="card__background"
                     style="background-image: url(https://i0.wp.com/patagonianatural.org.ar/wp-content/uploads/2021/07/05.jpg?fit=1000%2C750&ssl=1)">
 
@@ -88,6 +89,8 @@
                 <component :is="view"></component>
             </div>
         </section>
+        
+        
     </main>
     <footer id="idfooter">
     </footer>
@@ -95,6 +98,7 @@
     <script src="js/blog.js"></script>
     <script src="js/footer.js"></script>
     <script src="/js/navbar.js"></script>
+    <script src="js/especies.js"></script>
 </body>
 
 </html>
